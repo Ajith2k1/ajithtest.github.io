@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Even Question</h1>
+    <h3>Enquiry form</h3>
+    <div class="form">
+        <form>
+            <p>Name<sup>*</sup></p>
+            <input type="text" name="name" id="name" required placeholder="Enter Your Name"><br><br>
+            <p>Email<sup>*</sup></p>
+            <input type="email" name="Email" id="Email" required placeholder="Enter Your Email"><br><br>
+            <p>Course<sup>*</sup></p>
+            <select>
+        <option>Fullstack</option>
+        <option>Frontend</option>
+        <option>backend</option>
+        <option>AWS</option>
+        </select><br><br>
+            <label >Preffered Location:</label>
+            <select>       
+            <option>Anna Nagar</option>
+            <option>Besant Nagar</option>
+            <option>Porur</option>
+            <option>OMR</option>
+        </select><br><br>
+            <label>Current Location:</label>
+            <input type="text" name="loc" id="loc"><br><br>
+            <input type="checkbox" id="sub">
+            <label for="sub">subscribe to newsletter</label><br><br>
+            <input type="submit">
+        </form>
+    </div>
+    <h1>Odd Question</h1>
+    <h3>Application form</h3>
+    <div class="form">
+        <form><label class="required">Name</label>
+            <input class="highlight" type="text" name="name" id="name" required placeholder="Name"><br><br>
+            <label class="required">DOB</label>
+            <input class="highlight" type="date" name="dob" id="dob" required><br><br>
+            <label class="required">Email</label>
+            <input class="highlight" type="email" name="Email" id="Email" required placeholder="Email"><br><br>
+            <label class="required">Mobile No.</label>
+            <input class="highlight" type="tel" name="mob" id="mob" required><br><br>
+            <label class="notrequired">City</label>
+            <input class="highlight" type="text" name="city" id="city" required><br><br>
+            <input type="checkbox">I agree to the terms and conditions<br><br>
+            <input type="submit">
+        </form>
+    </div>
+</body>
+
+</html>
