@@ -1,0 +1,88 @@
+
+*{
+    background-color: bisque;
+}
+* {
+  margin: 10px;
+  padding: 10px;
+  font-family: "copperplate", fantasy;
+  
+}
+
+
+.highlight {
+    border-radius: 8px;
+}
+
+
+
+/*EVEN/
+/* 1.Achieve mandatory field using html & make it us red color*/
+
+sup {
+    color: red;
+}
+
+
+/* 2.dropdown selected should have shadow*/
+
+select:focus {
+    box-shadow: 2px 7px 7px blue;
+}
+
+
+/* 3.dropdown values should have alternate colors*/
+
+option:nth-child(odd) {
+    background-color: grey;
+}
+
+option:nth-child(even) {
+    background-color: white;
+}
+
+
+/* 4.mandatory labels first letter should be bolder than other characters*/
+
+.form p::first-letter {
+    font-weight: bolder;
+}
+
+
+/* 5.Checkbox selected should have change the color of text to red*/
+
+input:checked+label {
+    color: red;
+}
+
+/*ODD/
+/* 1.Achieve mandatory field using css*/
+
+.required::after {
+    content: "*";
+    color:red;
+}
+
+
+/* 2.onclick make blue highlight*/
+
+.highlight:focus {
+    border: 6px solid blue;
+    outline: none;
+}
+
+
+/* 3.mouse over label text green*/
+
+.required:hover {
+    color: green;
+    font-weight: bolder;
+}
+
+
+/* 4.mouse over non mandatory label text yellow*/
+
+.notrequired:hover {
+    color: yellow;
+    font-weight: bolder;
+}
