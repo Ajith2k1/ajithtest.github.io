@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ul li::before{
     content: "*";
     color: red;
@@ -57,3 +58,64 @@ ul li::before{
     align-items: center;
     
 }
+=======
+ul li::before{
+    content: "*";
+    color: red;
+}
+ LI:nth-last-child(2){
+    color: green;
+
+}
+/* two column layout using flex box*/
+.two{
+    display: flex;
+    background-color: yellowgreen;
+}
+.column{
+    flex: 1;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+
+.Three{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: lightblue;
+}
+.col{
+    padding: 10px;
+    border: 2px solid black;
+
+}
+.rev{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+
+}
+.c1{
+    padding: 10px;
+    background-color: lightskyblue;
+
+}
+.occupy{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px;
+    gap :10px;
+}
+
+.item:nth-child(1) {
+    border: 1px solid black;
+    grid-column: 1/3;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+>>>>>>> 089cdf79805f5f133d95aa6335fb649c8f0367d4
