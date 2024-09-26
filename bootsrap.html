@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Task</title>
+    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+      <h2>Booststrap Grid System</h2>
+    <div class="row">
+          <div class="col-4">Column 1</div>
+          <div class="col-4">Column 2</div>
+          <div class="col-md-4">Column 3</div>
+     </div>
+        <h2>Alerts</h2>
+        <p>Alerts are used to give execution status or feedback to the users.</p>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="alert alert-primary" role="alert">
+                    This is an alert box
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="alert alert-warning" role="alert">
+                    This is alert-warning
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="alert alert-success" role="alert">
+                   This is alert-success
+                </div>
+            </div>
+        </div>
+
+        <h2>Modal popups and Buttons</h2>
+        <p>Modal popups is used to display a tab or information without navigating away from the current page.for example click Register</p>
+        <div class="my-4">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                Register
+            </button>
+            <button type="button" class="btn btn-secondary">Secondary Button</button>
+            <button type="button" class="btn btn-success">Success Button</button>
+            <button type="button" class="btn btn-danger">Danger Button</button>
+            <button type="button" class="btn btn-warning">Warning Button</button>  
+            <button type="button" class="btn btn-info">Info Button</button>
+            <button type="button" class="btn btn-light">Light Button</button>
+            <button type="button" class="btn btn-dark">Dark Button</button>
+        </div>
+
+        
+        <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLabel">User Details</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="name" required>Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" required>Phone Number</label>
+                                <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+                            </div>
+                            <div class="form-group">
+                              <label for="email" required>Email</label>
+                              <input type="email" class="form-control" id="email" placeholder="Enter your email id">
+                          </div>
+                            <div class="form-group">
+                                <label for="date">Date of Birth</label>
+                                <input type="date" class="form-control" id="date">
+                            </div>
+                            <div>
+                                <button>submit</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Discard</button>
+                        <button type="button" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        
+        <h2>Utility Classes</h2>
+        <p>Utility classes are used for spacing, alignment, and display properties.</p>
+        <div class=" p-1 text-center text-black border">Padding </div><br>
+        <div class=" mb-2 bg-secondary text-white">Margine </div>
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

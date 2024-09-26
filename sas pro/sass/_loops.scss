@@ -1,0 +1,5 @@
+@for $i from 1 through 10 {
+    .card-#{$i} {
+        background-color: lighten($primary-color, $i * 5%);
+    }
+}
