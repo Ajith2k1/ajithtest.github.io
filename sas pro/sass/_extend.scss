@@ -1,0 +1,8 @@
+// Extendable class for common button styles
+%button-base {
+    border-radius: 5px;
+    font-size: $font-size-small;
+    display: inline-block;
+    padding: $padding;
+    text-align: center;
+  }

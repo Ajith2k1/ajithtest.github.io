@@ -1,0 +1,21 @@
+// Footer styles
+.footer {
+    background-color: darken($primary-color, 15%);
+    color: lightgray;
+    padding: $padding;
+    text-align: center;
+  
+    p {
+      margin: 0;
+      font-size: $font-size-small;
+    }
+  
+    a {
+      color: lighten($primary-color, 10%);
+      text-decoration: none;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }

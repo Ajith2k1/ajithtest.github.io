@@ -1,0 +1,4 @@
+// Function to lighten a color
+@function lighten-color($color, $percentage) {
+    @return lighten($color, $percentage);
+  }

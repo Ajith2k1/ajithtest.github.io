@@ -1,0 +1,28 @@
+// Mixin for responsive breakpoints
+@mixin respond-to($breakpoint) {
+    @if $breakpoint == small {
+      @media (max-width: 600px) {
+        @content;
+      }
+    } @else if $breakpoint == medium {
+      @media (max-width: 768px) {
+        @content;
+      }
+    } @else if $breakpoint == large {
+      @media (max-width: 1024px) {
+        @content;
+      }
+    }
+  }
+  
+  // Mixin for button style
+  @mixin button-style($bg-color, $text-color) {
+    background-color: $bg-color;
+    color: $text-color;
+    padding: $padding;
+    border: none;
+    cursor: pointer;
+    &:hover {
+      background-color: darken($bg-color, 10%);
+    }
+  }

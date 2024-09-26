@@ -1,0 +1,13 @@
+// Define a map for button colors
+$button-colors: (
+  primary: $primary-color,
+  secondary: $secondary-color,
+  danger: red,
+);
+
+// Loop through map to generate button styles
+@each $name, $color in $button-colors {
+  .btn-#{$name} {
+    @include button-style($color, white);
+  }
+}
